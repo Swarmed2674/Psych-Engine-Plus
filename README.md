@@ -1,93 +1,82 @@
-# Friday Night Funkin' - Psych Engine
-Engine originally used on [Mind Games Mod](https://gamebanana.com/mods/301107), intended to be a fix for the vanilla version's many issues while keeping the casual play aspect of it. Also aiming to be an easier alternative to newbie coders.
+Friday Night Funkin'-Psych Engine Plus
+引擎最初用於Mind Games Mod，旨在修復香草版本的許多問題，同時保持休閒遊戲方面。還旨在成為新手編碼器的更簡單的替代品。
 
-## Installation:
-You must have [the most up-to-date version of Haxe](https://haxe.org/download/), seriously, stop using 4.1.5, it misses some stuff.
+安裝：
+你必須擁有最新版本的Haxe，說真的，停止使用4.1.5，它錯過了一些東西。
 
-Follow a Friday Night Funkin' source code compilation tutorial, after this you will need to install LuaJIT.
+按照星期五晚上Funkin的原始程式碼編譯教程，在此之後，您將需要安裝LuaJIT。
 
-To install LuaJIT do this: `haxelib install linc_luajit` on a Command prompt/PowerShell
+要安裝LuaJIT，請執行以下操作：在命令提示符/PowerShell上haxelib install linc_luajit
 
-...Or if you don't want your mod to be able to run .lua scripts, delete the "LUA_ALLOWED" line on Project.xml
+...或者，如果您不希望您的模組能夠運行.lua腳本，請刪除 Project 上的"LUA_ALLOWED"行.xml
 
-## Credits:
-* Shadow Mario - Coding
-* RiverOaken - Arts and Animations
-* bbpanzu - Assistant Coding
-
-### Special Thanks
-* shubs - New Input System
-* SqirraRNG - Chart Editor's Sound Waveform base code
-* iFlicky - Delay/Combo Menu Song Composer + Dialogue Sounds
-* PolybiusProxy - .MP4 Loader Extension
-* Keoiki - Note Splash Animations
-_____________________________________
-
-# Features
-
-## Attractive animated dialogue boxes:
-
-![](https://user-images.githubusercontent.com/44785097/127706669-71cd5cdb-5c2a-4ecc-871b-98a276ae8070.gif)
+學分：
+影子馬里奧/Swarmed2674 - 編碼
+東方河 - 藝術與動畫
+bbpanzu - 助理編碼
+特別鳴謝
+shubs - 新的輸入系統
+SqirraRNG - 圖表編輯器的聲音波形基本代碼
+iFlicky - 延遲/組合功能表歌曲作曲家+對話聲音
+多桫椤 - .MP4 載入程式擴展
+Keoiki - 注意飛濺動畫
+特徵
+有吸引力的動畫對話框：
 
 
-## Mod Support
-* Probably one of the main points of this engine, you can code in .lua files outside of the source code, making your own weeks without even messing with the source!
-* Comes with a Mod Organizing/Disabling Menu. 
+模組支援
+可能是這個引擎的要點之一，您可以在原始程式碼之外編寫.lua檔中的代碼，從而製作自己的幾周，甚至不會弄亂原始程式碼！
+附帶一個Mod組織/禁用功能表。
+每週至少變更一次：
+第 1 周：
+新爸爸左唱雪碧
+現在使用未使用的舞台燈
+第 2 周：
+BF和Skid & Pump都做"Hey！"動畫
+雷霆會進行快速閃光，並將相機略微放大
+為《怪物》添加了快速過渡/過場動畫
+第 3 周：
+BF在費城尼斯期間做"嘿！"
+Blammed在歌曲的病態部分有一個很酷的新顏色閃光
+第 4 周：
+媽媽/男朋友的頭髮物理效果更好（甚至可能比第7周稍微好一點👀)
+在所有歌曲中，追隨者都會死亡。是的：（
+第 5 周：
+Bottom Boppers和GF在Cocoa和Eggnog期間做"Hey！"動畫
+在《Winter Horrorland》中，GF在歌曲的某些部分放慢了頭。
+第 6 周：
+在《荊棘》中，HUD隱藏在過場動畫中
+還有背景女孩在樂器的"嘿！"部分被嚇壞了
+很酷的新圖表編輯器更改和無數的錯誤修復
 
 
-## Atleast one change to every week:
-### Week 1:
-  * New Dad Left sing sprite 
-  * Unused stage lights are now used
-### Week 2:
-  * Both BF and Skid & Pump does "Hey!" animations
-  * Thunders does a quick light flash and zooms the camera in slightly
-  * Added a quick transition/cutscene to Monster
-### Week 3:
-  * BF does "Hey!" during Philly Nice
-  * Blammed has a cool new colors flash during that sick part of the song
-### Week 4:
-  * Better hair physics for Mom/Boyfriend (Maybe even slightly better than Week 7's :eyes:)
-  * Henchmen die during all songs. Yeah :(
-### Week 5:
-  * Bottom Boppers and GF does "Hey!" animations during Cocoa and Eggnog
-  * On Winter Horrorland, GF bops her head slower in some parts of the song.
-### Week 6:
-  * On Thorns, the HUD is hidden during the cutscene
-  * Also there's the Background girls being spooky during the "Hey!" parts of the Instrumental
+您現在可以繪製"事件"註釋圖表，這些註釋是觸發特定操作的書籤，這些操作通常在遊戲的普通版本上進行了硬編碼。
+歌曲的 BPM 現在可以具有十進位值
+您可以手動調整Note的讀數時間，如果您真的想要毫秒級精度
+您可以在編輯器上變更註解的類型，它附帶兩個範例類型：
+Alt 動畫：強制播放 alt 動畫，對於 Ugh/Stress 等歌曲非常有用
+嘿：強制製作"嘿"動畫代替基礎唱歌動畫，如果男朋友擊中這個音符，女朋友也會做一個"嘿！"。
+多個編輯器，以説明您製作自己的Mod
+Screenshot_3
 
-## Cool new Chart Editor changes and countless bug fixes
-![](https://github.com/ShadowMario/FNF-PsychEngine/blob/main/docs/img/chart.png?raw=true)
-* You can now chart "Event" notes, which are bookmarks that trigger specific actions that usually were hardcoded on the vanilla version of the game.
-* Your song's BPM can now have decimal values
-* You can manually adjust a Note's strum time if you're really going for milisecond precision
-* You can change a note's type on the Editor, it comes with two example types:
-  * Alt Animation: Forces an alt animation to play, useful for songs like Ugh/Stress
-  * Hey: Forces a "Hey" animation instead of the base Sing animation, if Boyfriend hits this note, Girlfriend will do a "Hey!" too.
+適用於原始碼修改和下載版本！
+故事模式功能表返工：
 
-## Multiple editors to assist you in making your own Mod
-![Screenshot_3](https://user-images.githubusercontent.com/44785097/144629914-1fe55999-2f18-4cc1-bc70-afe616d74ae5.png)
-* Working both for Source code modding and Downloaded builds!
 
-## Story mode menu rework:
-![](https://i.imgur.com/UB2EKpV.png)
-* Added a different BG to every song (less Tutorial)
-* All menu characters are now in individual spritesheets, makes modding it easier.
+為每首歌曲添加了不同的BG（較少的教程）
+所有功能表字元現在都在單獨的精靈表中，使修改更容易。
+鳴謝功能表
+Screenshot_1
 
-## Credits menu
-![Screenshot_1](https://user-images.githubusercontent.com/44785097/144632635-f263fb22-b879-4d6b-96d6-865e9562b907.png)
-* You can add a head icon, name, description and a Redirect link for when the player presses Enter while the item is currently selected.
-
-## Awards/Achievements
-* The engine comes with 16 example achievements that you can mess with and learn how it works (Check Achievements.hx and search for "checkForAchievement" on PlayState.hx)
-
-## Options menu:
-* You can change Note colors, Delay and Combo Offset, Controls and Preferences there.
- * On Preferences you can toggle Downscroll, Middlescroll, Anti-Aliasing, Framerate, Low Quality, Note Splashes, Flashing Lights, etc.
-
-## Other gameplay features:
-* When the enemy hits a note, their strum note also glows.
-* Lag doesn't impact the camera movement and player icon scaling anymore.
-* Some stuff based on Week 7's changes has been put in (Background colors on Freeplay, Note splashes)
-* You can reset your Score on Freeplay/Story Mode by pressing Reset button.
-* You can listen to a song or adjust Scroll Speed/Damage taken/etc. on Freeplay by pressing Space.
+您可以添加頭部圖示、名稱、描述和重定向連結，以便在玩家在當前選定專案時按 Enter 鍵時使用。
+獎項/成就
+該引擎附帶了16個示例成就，您可以弄亂並瞭解其工作原理（檢查成就.hx並在PlayState.hx上搜索"checkForAchievement"）
+選項選單：
+您可以在此處更改「註釋顏色」 延遲「 和」 組合偏移、 "控件" 和"首選項"。
+在首選項上，您可以切換向下滾動，中間滾動，抗鋸齒，幀速率，低品質，音符飛濺，閃爍等。
+其他遊戲功能：
+當敵人擊中一個音符時，他們的音符也會發光。
+滯後不再影響攝像機移動和播放器圖示縮放。
+一些基於第7周更改的內容已被放入（Freeplay上的背景顏色，音符飛濺）
+您可以通過按「重置」按鈕在自由播放/故事模式下重置您的分數。
+您可以通過按空格鍵在Freeplay上收聽歌曲或調整滾動速度/受到的傷害等。
