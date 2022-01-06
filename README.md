@@ -13,3 +13,4 @@
 ## 進度
 * 2022/1/1 增加一週，添加可用難度，版本號：1.0-PreAlpha_000198
 * ![image](https://user-images.githubusercontent.com/96339124/148224213-051a0b1f-214b-480a-8040-43353a6acbb7.png)
+* 2022/1/6 第一周第三首，第二周第二首更新，版本號：1.0-PreAlpha_00031
